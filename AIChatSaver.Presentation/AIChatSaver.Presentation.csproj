@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationManifest>App.Config\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CefSharp.WinForms.NETCore" Version="152.0.100" />
+    <PackageReference Include="System.Text.Json" Version="11.0.0-rc.1.26425.128" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIChatSaver.Domain\AIChatSaver.Domain.csproj" />
+    <ProjectReference Include="..\AIChatSaver.Infrastructure\AIChatSaver.Infrastructure.csproj" />
+    <ProjectReference Include="..\AIChatSaver.UseCases\AIChatSaver.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>
